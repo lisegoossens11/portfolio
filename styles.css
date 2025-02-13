@@ -190,10 +190,11 @@ footer {
     figure {
         margin: 0;
         padding: 0; /* Remove any padding */
-        width: 360px; /* Ensure figures take up full width */
+        width: 100%; /* Ensure figures take up full width */
     }
 
     figure img {
+        width: 100vw;
     
         height: auto;
         display: block; /* Removes inline-block spacing */
