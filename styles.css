@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    color: #232323;
+}
+
+nav {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+li {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    list-style-type: none;
+    display: inline;
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #767676;
+}
+
+a:hover {
+    color: #232323;
+}
+
+header {
+    padding-top: 6em;
+    padding-right: 6em;
+    padding-left: 6em;
+    padding-bottom: 3em;
+}
+
+body {
+    color: #767676;
+    font-size: 18px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.gallery {
+    column-count: 3; 
+    column-gap: 1.5em; 
+    padding: 0 6em; 
+    
+}
+
+.gallery figure {
+    display: block;
+    break-inside: avoid; /* Prevents items from breaking across columns */
+    margin-bottom: 2em; 
+}
+
+
+.outfits {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1.5em; 
+    padding: 2em; 
+}
+
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    max-width: 400px;
+}
+
+.space-above {
+    margin-top: 1em;
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+footer {
+    margin-top: 6em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 16px;
+}
+
+.small {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bio-text {
+    text-align: left;
+    
+    margin: auto;
+    padding-bottom: 1em;
+    max-width: 800px;
+}
+
+.bio-photo-text {
+    display: flex;
+    align-items: center; 
+    gap: 2em; 
+    margin-bottom: 3em;
+    max-width: 800px;
+}
+
+#bio-pic {
+    width: 400px; 
+    height: auto;
+}
+
+.right-text {
+    flex: 1; /* Makes sure the text takes up the remaining space */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.biography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.black {
+    color: #232323 !important;
+}
+
+.big-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.underillustration {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.2em;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 1em;
+    }
+    figure {
+        margin: 0;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    /* Change the layout to column for bio-photo-text */
+    .bio-photo-text {
+        display: flex;
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; 
+        gap: 1.5em; 
+        margin-bottom: 3em;
+        max-width: 800px;
+        
+    }
+
+    /* Ensure the image is full width on small screens */
+    #bio-pic {
+        width: 100%; 
+        height: auto;
+        
+    }
+    
+    .right-text {
+        
+        font-size: 18px;
+        line-height: 1.5;
+        
+    }
+
+    .biography {
+        padding: 0 2em;
+    }
+
+    .bio-text {
+        width: 100%;
+    }
+
+
+}
