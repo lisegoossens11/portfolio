@@ -1,9 +1,11 @@
+/* General Reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Typography */
 h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
@@ -12,6 +14,7 @@ h1 {
     color: #232323;
 }
 
+/* Navigation */
 nav {
     text-align: center;
     margin-top: 1.5em;
@@ -34,6 +37,7 @@ a:hover {
     color: #232323;
 }
 
+/* Header Styling */
 header {
     padding-top: 6em;
     padding-right: 6em;
@@ -47,11 +51,11 @@ body {
     font-family: 'Source Serif Pro', serif;
 }
 
+/* Gallery and Image Layout */
 .gallery {
     column-count: 3; 
     column-gap: 1.5em; 
     padding: 0 6em; 
-    
 }
 
 .gallery figure {
@@ -59,7 +63,6 @@ body {
     break-inside: avoid; /* Prevents items from breaking across columns */
     margin-bottom: 2em; 
 }
-
 
 .outfits {
     display: flex; 
@@ -69,7 +72,6 @@ body {
     gap: 1.5em; 
     padding: 2em; 
 }
-
 
 figure img {
     max-width: 100%;
@@ -103,6 +105,7 @@ figcaption {
     font-style: italic;
 }
 
+/* Footer */
 footer {
     margin-top: 6em;
     margin-bottom: 2em;
@@ -117,7 +120,6 @@ footer {
 
 .bio-text {
     text-align: left;
-    
     margin: auto;
     padding-bottom: 1em;
     max-width: 800px;
@@ -137,17 +139,16 @@ footer {
 }
 
 .right-text {
-    flex: 1; /* Makes sure the text takes up the remaining space */
+    flex: 1;
     font-size: 18px;
     line-height: 1.5;
 }
 
-
+/* Biography Section */
 .biography {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .black {
@@ -166,54 +167,66 @@ footer {
     margin-top: 1em;
 }
 
+/* Mobile Adjustments */
 @media screen and (max-width: 600px) {
     body {
-        font-size: 1.2em;
+        font-size: 18px;
     }
+
+    /* Gallery changes to grid */
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: 1fr; /* Single column layout */
         gap: 1em;
+        padding: 0 1em;
     }
+
     figure {
         margin: 0;
     }
+
     img {
-        max-width: 100%;
+        width: 100%; /* Ensure images fill their container */
+        height: auto;
     }
 
-    /* Change the layout to column for bio-photo-text */
+    /* Stack bio-photo-text vertically on mobile */
     .bio-photo-text {
         display: flex;
-        flex-direction: column; /* Stack the image and text vertically */
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         gap: 1.5em; 
         margin-bottom: 3em;
-        max-width: 800px;
-        
+        max-width: 100%; /* Remove max-width to take full screen width */
     }
 
-    /* Ensure the image is full width on small screens */
     #bio-pic {
-        width: 100%; 
+        width: 100%;  /* Make the image take full screen width */
         height: auto;
-        
     }
-    
+
     .right-text {
-        
         font-size: 18px;
         line-height: 1.5;
-        
     }
 
+    /* Biography section with adjusted padding */
     .biography {
         padding: 0 2em;
     }
 
+    /* Ensure bio-text also fills container on small screens */
     .bio-text {
         width: 100%;
     }
 
+    /* For big-image section */
+    .big-image {
+        gap: 1em;
+    }
 
+    h1 {
+        text-align: center; /* Ensure the title stays centered */
+        margin: 0; /* Ensure no margins interfere */
+    }
 }
