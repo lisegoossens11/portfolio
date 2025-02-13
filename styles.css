@@ -172,19 +172,23 @@ footer {
 @media screen and (max-width: 400px) {
     body {
         font-size: 18px;
+        margin: 0; /* Reset any default margin */
+        padding: 0; /* Reset any default padding */
+        box-sizing: border-box; /* Include padding in the element's width/height */
     }
 
-    /* Gallery changes to grid */
+    /* Gallery - Remove padding and set full width */
     .gallery {
         display: grid;
         gap: 1em;
         width: 100%;
-        padding: 0; /* Remove any unnecessary padding */
+        padding: 0; /* Remove any padding */
+        margin: 0; /* Remove any margin */
     }
 
     figure {
         margin: 0;
-        padding: 0; /* Remove padding */
+        padding: 0; /* Remove any padding */
         width: 100%; /* Ensure figures take up full width */
     }
 
@@ -192,15 +196,10 @@ footer {
         width: 100%; /* Ensure images fill the container */
         height: auto;
         display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
     }
 
-    /* Ensure no white space around the images */
-    .gallery {
-        margin: 0; /* Ensure no external margin */
-        padding: 0; /* Ensure no external padding */
-    }
-
-    /* Stack bio-photo-text vertically on mobile */
+    /* For the Bio Section */
     .bio-photo-text {
         display: flex;
         flex-direction: column;
