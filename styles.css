@@ -177,7 +177,7 @@ footer {
     /* Gallery changes to grid */
     .gallery {
         display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
+
         gap: 1em;
         padding: 0 1em;
     }
