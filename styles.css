@@ -181,7 +181,7 @@ footer {
     .gallery {
         display: grid;
         gap: 1em;
-        width: 360px;
+       
         padding: 0; /* Remove any padding */
         margin: 0; /* Remove any margin */
     }
@@ -189,11 +189,11 @@ footer {
     figure {
         margin: 0;
         padding: 0; /* Remove any padding */
-        width: 100%; /* Ensure figures take up full width */
+        width: 360px; /* Ensure figures take up full width */
     }
 
     figure img {
-        width: 100%; /* Ensure images fill the container */
+    
         height: auto;
         display: block; /* Removes inline-block spacing */
         object-fit: cover; /* Prevents stretching if needed */
