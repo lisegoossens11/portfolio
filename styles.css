@@ -169,7 +169,7 @@ footer {
 }
 
 /* Mobile Adjustments */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     body {
         font-size: 18px;
     }
