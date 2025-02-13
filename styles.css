@@ -180,16 +180,19 @@ footer {
 
         gap: 1em;
         padding: 0 1em;
+        width: 100%;
     }
 
     figure {
         margin: 0;
         padding-left: none;
+        width: 100%;
     }
 
     img {
         width: 100%; /* Ensure images fill their container */
         height: auto;
+        
     }
 
     /* Stack bio-photo-text vertically on mobile */
