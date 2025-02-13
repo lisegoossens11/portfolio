@@ -181,7 +181,7 @@ footer {
     .gallery {
         display: grid;
         gap: 1em;
-        width: 100%;
+        width: 360px;
         padding: 0; /* Remove any padding */
         margin: 0; /* Remove any margin */
     }
