@@ -198,8 +198,9 @@ footer {
 
 .biography {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    max-width: 4000px;
     
 }
 
