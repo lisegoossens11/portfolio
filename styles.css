@@ -57,6 +57,7 @@ body {
     display: block;
     break-inside: avoid; /* Prevents items from breaking across columns */
     margin-bottom: 2em; 
+    width: 100%;
     
 }
 
