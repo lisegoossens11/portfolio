@@ -203,6 +203,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     max-width: 4000px;
+    padding: 0 2em;
     
 }
 
