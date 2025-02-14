@@ -381,8 +381,4 @@ footer {
     }
 }
 
-/* Big screen Adjustments */
-@media screen and (min-width: 2000px) {
-    .biography {
-        max-width: 2000px;
-    }
+
