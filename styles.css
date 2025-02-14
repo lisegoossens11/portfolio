@@ -243,3 +243,84 @@ footer {
     padding-bottom: 3em;
     }
 }
+
+/* Tablet Adjustments */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+
+    
+    .gallery {
+        display: grid;
+        gap: 1em;
+        column-count: 1; 
+     
+        padding: 0; 
+        margin: 0; 
+    }
+
+    figure {
+        margin: 0;
+        padding: 0; 
+        width: 100%; 
+    }
+
+    figure img {
+        width: 100vw;
+    
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+   
+    .bio-photo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        margin-bottom: 3em;
+        max-width: 100%; 
+    }
+
+    #bio-pic {
+        width: 100%;  
+        height: auto;
+    }
+
+    .right-text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+   
+    .biography {
+        padding: 0 2em;
+    }
+
+    
+    .bio-text {
+        width: 100%;
+    }
+
+    
+    .big-image {
+        gap: 1em;
+    }
+
+    h1 {
+        text-align: center; 
+        margin: 0; 
+    }
+
+    header {
+    padding-top: 3em;
+    padding-right: 0em;
+    padding-left: 0em;
+    padding-bottom: 3em;
+    }
+}
