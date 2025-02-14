@@ -181,6 +181,8 @@ footer {
     align-items: center; 
     gap: 2em; 
     margin-bottom: 3em;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 800px;
 }
 
