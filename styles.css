@@ -1,11 +1,9 @@
-/* General Reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Typography */
 h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
@@ -14,7 +12,6 @@ h1 {
     color: #232323;
 }
 
-/* Navigation */
 nav {
     text-align: center;
     margin-top: 1.5em;
@@ -37,7 +34,6 @@ a:hover {
     color: #232323;
 }
 
-/* Header Styling */
 header {
     padding-top: 6em;
     padding-right: 6em;
@@ -51,7 +47,6 @@ body {
     font-family: 'Source Serif Pro', serif;
 }
 
-/* Gallery and Image Layout */
 .gallery {
     column-count: 3; 
     column-gap: 1.5em; 
@@ -106,7 +101,6 @@ figcaption {
     font-style: italic;
 }
 
-/* Footer */
 footer {
     margin-top: 6em;
     margin-bottom: 2em;
@@ -145,7 +139,7 @@ footer {
     line-height: 1.5;
 }
 
-/* Biography Section */
+
 .biography {
     display: flex;
     flex-wrap: wrap;
@@ -172,25 +166,25 @@ footer {
 @media screen and (max-width: 400px) {
     body {
         font-size: 18px;
-        margin: 0; /* Reset any default margin */
-        padding: 0; /* Reset any default padding */
-        box-sizing: border-box; /* Include padding in the element's width/height */
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
     }
 
-    /* Gallery - Remove padding and set full width */
+    
     .gallery {
         display: grid;
         gap: 1em;
         column-count: 1; 
      
-        padding: 0; /* Remove any padding */
-        margin: 0; /* Remove any margin */
+        padding: 0; 
+        margin: 0; 
     }
 
     figure {
         margin: 0;
-        padding: 0; /* Remove any padding */
-        width: 100%; /* Ensure figures take up full width */
+        padding: 0; 
+        width: 100%; 
     }
 
     figure img {
@@ -201,18 +195,18 @@ footer {
         object-fit: cover; /* Prevents stretching if needed */
     }
 
-    /* For the Bio Section */
+   
     .bio-photo-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.5em;
         margin-bottom: 3em;
-        max-width: 100%; /* Remove max-width to take full screen width */
+        max-width: 100%; 
     }
 
     #bio-pic {
-        width: 100%;  /* Make the image take full screen width */
+        width: 100%;  
         height: auto;
     }
 
@@ -221,23 +215,30 @@ footer {
         line-height: 1.5;
     }
 
-    /* Biography section with adjusted padding */
+   
     .biography {
         padding: 0 2em;
     }
 
-    /* Ensure bio-text also fills container on small screens */
+    
     .bio-text {
         width: 100%;
     }
 
-    /* For big-image section */
+    
     .big-image {
         gap: 1em;
     }
 
     h1 {
-        text-align: center; /* Ensure the title stays centered */
-        margin: 0; /* Ensure no margins interfere */
+        text-align: center; 
+        margin: 0; 
+    }
+
+    header {
+    padding-top: 3em;
+    padding-right: 0em;
+    padding-left: 0em;
+    padding-bottom: 3em;
     }
 }
