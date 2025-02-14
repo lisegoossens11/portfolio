@@ -200,7 +200,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 800px;
+    
 }
 
 .black {
@@ -380,3 +380,9 @@ footer {
     padding-bottom: 3em;
     }
 }
+
+/* Big screen Adjustments */
+@media screen and (min-width: 2000px) {
+    .biography {
+        max-width: 200px;
+    }
