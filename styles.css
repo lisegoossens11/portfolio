@@ -147,7 +147,30 @@ figcaption {
     text-align: left;
     padding-left: 1em;
     padding-top: 0.4em;
-    max-width: 400px;
+    max-width: 300px;
+}
+
+.smaller-page-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center; /* This ensures images are centered vertically */
+    margin: 0 auto; /* Centers the flex container horizontally */
+    
+}
+
+.smaller-page-image img {
+    max-width: 350px;
+    height: auto;
+    
+}
+
+.smaller-page-image figcaption {
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    max-width: 350px;
 }
 
 
@@ -384,5 +407,3 @@ footer {
     padding-bottom: 3em;
     }
 }
-
-
