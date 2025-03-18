@@ -44,6 +44,7 @@ header {
 body {
     color: #767676;
     font-size: 18px;
+    line-height: 1.5;
     font-family: 'Source Serif Pro', serif;
 }
 
@@ -85,7 +86,7 @@ figcaption {
     text-align: left;
     padding-left: 1em;
     padding-top: 0.4em;
-    max-width: 400px;
+    
 }
 
 .space-above {
@@ -124,7 +125,8 @@ figcaption {
     text-align: left;
     padding-left: 1em;
     padding-top: 0.4em;
-    max-width: 400px;
+    max-width: 550px;
+    
 }
 
 .vertical-page-image {
@@ -147,9 +149,38 @@ figcaption {
     text-align: left;
     padding-left: 1em;
     padding-top: 0.4em;
-    max-width: 300px;
+    max-width: 500px;
 }
 
+.wide-page-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center; /* This ensures images are centered vertically */
+    margin: 0 auto; /* Centers the flex container horizontally */
+    
+}
+
+.wide-page-image img {
+    max-width: 1080px;
+    height: auto;
+    
+}
+
+.wide-page-image figcaption {
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    max-width: 500px;
+}
+
+
+
+
+.bold {
+    font-weight: strong;
+}
 
 .italic {
     font-style: italic;
