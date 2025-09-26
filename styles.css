@@ -59,7 +59,7 @@ body {
 .gallery figure {
     display: block;
     break-inside: avoid; /* Prevents items from breaking across columns */
-    margin-bottom: 2em; 
+    margin-bottom: 1.5em; 
     width: 100%;
     
 }
@@ -220,6 +220,34 @@ footer {
     height: auto;
 }
 
+#birth-announcement-text {
+    text-align: left;
+    margin: auto;
+    padding-bottom: 1em;
+    
+}
+
+.birth-announcement-text {
+    
+    margin-bottom: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+}
+
+
+.text-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+    color: #232323;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    
+}
+
 .right-text {
     flex: 1;
     font-size: 18px;
@@ -270,6 +298,7 @@ footer {
         padding: 0; 
         margin: 0; 
     }
+
 
     figure {
         margin: 0;
