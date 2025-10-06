@@ -123,9 +123,10 @@ figcaption {
 
 .page-image figcaption {
     text-align: left;
-    padding-left: 1em;
-    padding-top: 0.4em;
-    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    max-width: 600px;
     
 }
 
@@ -147,9 +148,10 @@ figcaption {
 
 .vertical-page-image figcaption {
     text-align: left;
-    padding-left: 1em;
-    padding-top: 0.4em;
-    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    max-width: 600px;
 }
 
 .wide-page-image {
@@ -170,9 +172,10 @@ figcaption {
 
 .wide-page-image figcaption {
     text-align: left;
-    padding-left: 1em;
-    padding-top: 0.4em;
-    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    max-width: 600px;
 }
 
 
