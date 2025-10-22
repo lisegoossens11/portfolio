@@ -377,7 +377,7 @@ footer {
     
     .gallery {
         display: grid;
-        gap: 1em;
+        gap: 0.5em;
         column-count: 1; 
      
         padding: 0; 
