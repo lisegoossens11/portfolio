@@ -64,6 +64,8 @@ body {
     
 }
 
+
+
 .outfits {
     display: flex; 
     flex-wrap: wrap; 
@@ -88,6 +90,7 @@ figcaption {
     padding-top: 0.4em;
     
 }
+
 
 .space-above {
     margin-top: 1em;
@@ -122,6 +125,15 @@ figcaption {
 }
 
 .page-image figcaption {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    max-width: 600px;
+    
+}
+
+.gallery-text {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -286,11 +298,16 @@ footer {
 /* Mobile Adjustments */
 @media screen and (max-width: 400px) {
     body {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0; 
         padding: 0; 
         box-sizing: border-box; 
     }
+
+    figcaption text{
+        font-size: 14px;
+    
+}
 
     
     .gallery {
@@ -368,16 +385,15 @@ footer {
 /* Tablet Adjustments */
 @media screen and (max-width: 600px) {
     body {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0; 
         padding: 0; 
         box-sizing: border-box; 
     }
-
     
     .gallery {
         display: grid;
-        gap: 1em;
+        gap: 0.5em;
         column-count: 1; 
      
         padding: 0; 
