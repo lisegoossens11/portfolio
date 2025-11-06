@@ -64,6 +64,19 @@ body {
     
 }
 
+.big-collage {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1.5em; 
+    padding: 2em; 
+}
+
+.big-collage img {
+    max-width: 600px;
+}
+
 
 
 .outfits {
