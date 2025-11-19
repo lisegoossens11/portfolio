@@ -317,11 +317,6 @@ footer {
         box-sizing: border-box; 
     }
 
-    figcaption text{
-        font-size: 14px;
-    
-    }
-
     
     .gallery {
         display: grid;
@@ -353,6 +348,37 @@ footer {
         column-count: 1; 
         padding: 0; 
         margin: 0; 
+        width: 100vw;
+    }
+
+    .big-collage {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .big-collage img {
+        width: 100vw;
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+    .gallery-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw; 
+        padding-top: 3em;
+    }
+
+    figcaption {
+    max-width: 90vw; 
+    font-size: 16px;
+    padding-left: 2em;
+    padding-right: 2em;
     }
 
     .outfits img {
@@ -428,12 +454,20 @@ footer {
         margin: 0; 
     }
 
+    figcaption {
+    max-width: 90vw; 
+    font-size: 16px;
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+
     .outfits {
         display: grid;
         gap: 0.5em;
         column-count: 1; 
         padding: 0; 
         margin: 0; 
+        width: 100vw;
     }
 
     .outfits img {
@@ -441,6 +475,29 @@ footer {
         height: auto;
         display: block; /* Removes inline-block spacing */
         object-fit: cover; /* Prevents stretching if needed */
+    }
+
+    .big-collage {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .big-collage img {
+        width: 100vw;
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+    .gallery-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw; 
+        padding-top: 3em;
     }
 
     figure {
