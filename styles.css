@@ -320,7 +320,7 @@ footer {
     figcaption text{
         font-size: 14px;
     
-}
+    }
 
     
     .gallery {
@@ -342,6 +342,21 @@ footer {
     figure img {
         width: 100vw;
     
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+    .outfits {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .outfits img {
+        width: 100vw;
         height: auto;
         display: block; /* Removes inline-block spacing */
         object-fit: cover; /* Prevents stretching if needed */
@@ -411,6 +426,21 @@ footer {
      
         padding: 0; 
         margin: 0; 
+    }
+
+    .outfits {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+    }
+
+    .outfits img {
+        width: 100vw;
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
     }
 
     figure {
