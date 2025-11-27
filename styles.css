@@ -179,6 +179,30 @@ figcaption {
     max-width: 600px;
 }
 
+.small-page-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center; /* This ensures images are centered vertically */
+    margin: 0 auto; /* Centers the flex container horizontally */
+    
+}
+
+.small-page-image img {
+    max-width: 400px;
+    height: auto;
+    
+}
+
+.small-page-image figcaption {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    max-width: 600px;
+}
+
 .wide-page-image {
     display: flex;
     flex-direction: column;
