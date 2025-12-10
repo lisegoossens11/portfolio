@@ -93,6 +93,23 @@ body {
     max-width: 400px;
 }
 
+.wide-collage {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1em; 
+    padding-bottom: 1em; 
+    padding-top: 1em; 
+    margin: auto;
+    max-width: 1080px;
+}
+
+.wide-collage img {
+    max-width: 200px;
+}
+
+
 figure img {
     width: 100%;
     height: auto;
@@ -105,9 +122,8 @@ figcaption {
     
 }
 
-
 .space-above {
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .text {
@@ -377,6 +393,7 @@ footer {
         margin: 0; 
         width: 100vw;
     }
+
 
     .big-collage {
         display: grid;
