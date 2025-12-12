@@ -432,6 +432,22 @@ footer {
         object-fit: cover; /* Prevents stretching if needed */
     }
 
+    .wide-collage {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+        width: 100vw;
+    }
+
+    .wide-collage img {
+      width: 100vw;
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
    
     .bio-photo-text {
         display: flex;
@@ -516,6 +532,22 @@ footer {
 
     .outfits img {
         width: 100vw;
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+    .wide-collage {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+        width: 100vw;
+    }
+
+    .wide-collage img {
+      width: 100vw;
         height: auto;
         display: block; /* Removes inline-block spacing */
         object-fit: cover; /* Prevents stretching if needed */
