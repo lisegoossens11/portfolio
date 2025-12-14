@@ -443,9 +443,10 @@ footer {
 
     .wide-collage img {
       width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
+      height: auto;
+      display: block; /* Removes inline-block spacing */
+      object-fit: cover; /* Prevents stretching if needed */
+      max-width: none;
     }
 
    
@@ -551,6 +552,7 @@ footer {
         height: auto;
         display: block; /* Removes inline-block spacing */
         object-fit: cover; /* Prevents stretching if needed */
+        max-width: none;
     }
 
     .big-collage {
