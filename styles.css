@@ -67,7 +67,7 @@ body {
 .gallery figure {
     display: block;
     break-inside: avoid; /* Prevents items from breaking across columns */
-    margin-bottom: 1.5em; 
+    margin-bottom: 1.3em; 
     width: 100%;
     
 }
@@ -99,6 +99,19 @@ body {
 
 .outfits img {
     max-width: 400px;
+}
+
+.smaller-collage {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1.5em; 
+    padding: 2em; 
+}
+
+.smaller-collage img {
+    max-width: 340px;
 }
 
 .wide-collage {
@@ -349,7 +362,7 @@ footer {
 
 .black a{
     color: #232323 !important;
-    font-weight: bold;
+
 }
 
 .big-image {
@@ -652,3 +665,4 @@ footer {
     padding-bottom: 3em;
     }
 }
+
