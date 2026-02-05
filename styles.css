@@ -20,6 +20,27 @@ h1 {
     color: #232323;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 20px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  opacity: 0.85;
+}
+
+.seaside-social-icons a:hover img {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+
 nav {
     text-align: center;
     margin-top: 1.5em;
