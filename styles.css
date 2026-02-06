@@ -477,8 +477,8 @@ footer {
     .end {
     max-width: 90vw; 
     font-size: 16px;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     }
 
     .outfits img {
@@ -497,13 +497,32 @@ footer {
         width: 100vw;
     }
 
-    .wide-collage img {
+     .wide-collage img {
       width: 100vw;
       height: auto;
       display: block; /* Removes inline-block spacing */
       object-fit: cover; /* Prevents stretching if needed */
       max-width: none;
     }
+
+    .smaller-collage img {
+      width: 100vw;
+      height: auto;
+      display: block; /* Removes inline-block spacing */
+      object-fit: cover; /* Prevents stretching if needed */
+      max-width: none;
+    }
+
+    .smaller-collage {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+        width: 100vw;
+    }
+
+
 
    
     .bio-photo-text {
@@ -606,6 +625,23 @@ footer {
     }
 
     .wide-collage img {
+      width: 100vw;
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+        max-width: none;
+    }
+
+    .smaller-collage {
+        display: grid;
+        gap: 0.5em;
+        column-count: 1; 
+        padding: 0; 
+        margin: 0; 
+        width: 100vw;
+    }
+
+    .smaller-collage img {
       width: 100vw;
         height: auto;
         display: block; /* Removes inline-block spacing */
