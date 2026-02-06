@@ -20,6 +20,46 @@ h1 {
     color: #232323;
 }
 
+/* aanpassing */
+.homepage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em; 
+  max-width: 2000px;
+  padding: 0 6em; 
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em; 
+  
+
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* aanpassing eind */
+
+.gallery {
+    column-count: 3; 
+    column-gap: 1.5em; 
+    padding: 0 6em; 
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.gallery figure {
+    display: block;
+    break-inside: avoid; /* Prevents items from breaking across columns */
+    margin-bottom: 1.3em; 
+    width: 100%;
+    
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -75,22 +115,6 @@ body {
     font-size: 18px;
     line-height: 1.5;
     font-family: 'Source Serif Pro', serif;
-}
-
-.gallery {
-    column-count: 3; 
-    column-gap: 1.5em; 
-    padding: 0 6em; 
-    max-width: 2000px;
-    margin: 0 auto;
-}
-
-.gallery figure {
-    display: block;
-    break-inside: avoid; /* Prevents items from breaking across columns */
-    margin-bottom: 1.3em; 
-    width: 100%;
-    
 }
 
 
@@ -424,6 +448,18 @@ footer {
         width: 100%; 
     }
 
+    /* aanpassing */
+     .homepage-grid {
+     grid-template-columns: 1fr; 
+     padding: 0; 
+     margin: 0; 
+    }
+
+    .column {
+     gap: 0.5em; 
+    }
+    /* aanpassing eind */
+
     figure img {
         width: 100vw;
     
@@ -466,6 +502,13 @@ footer {
     }
 
     figcaption {
+    max-width: 90vw; 
+    font-size: 16px;
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+
+    .end {
     max-width: 90vw; 
     font-size: 16px;
     padding-left: 2em;
@@ -561,6 +604,16 @@ footer {
         padding: 0; 
         margin: 0; 
     }
+
+    /* aanpassing */
+    .homepage-grid {
+     grid-template-columns: 1fr; 
+    }
+
+    .column {
+     gap: 0.5em; 
+    }
+    /* aanpassing eind */
 
     figcaption {
     max-width: 90vw; 
