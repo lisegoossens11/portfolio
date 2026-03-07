@@ -51,6 +51,12 @@ h1 {
   height: auto;
   display: block;
 }
+
+.column video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* aanpassing eind */
 
 
@@ -68,11 +74,6 @@ h1 {
   height: 22px;
   display: block;
   opacity: 0.85;
-}
-
-.seaside-social-icons a:hover img {
-  opacity: 1;
-  transform: scale(1.08);
 }
 
 
@@ -174,6 +175,8 @@ body {
 figure img {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 figcaption {
@@ -193,6 +196,13 @@ figcaption {
 }
 
 .image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.video {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5em;
@@ -264,6 +274,14 @@ figcaption {
     max-width: 400px;
     height: auto;
     
+}
+
+
+.small-page-image video {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .small-page-image figcaption {
@@ -430,7 +448,7 @@ footer {
 
 
     figure {
-        margin: 0;
+        margin: 0 auto;
         padding: 0; 
         width: 100%; 
     }
@@ -448,6 +466,15 @@ footer {
     /* aanpassing eind */
 
     figure img {
+        width: 100vw;
+    
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+
+    figure video {
         width: 100vw;
     
         height: auto;
@@ -696,6 +723,14 @@ footer {
     }
 
     figure img {
+        width: 100vw;
+    
+        height: auto;
+        display: block; /* Removes inline-block spacing */
+        object-fit: cover; /* Prevents stretching if needed */
+    }
+
+    figure video {
         width: 100vw;
     
         height: auto;
