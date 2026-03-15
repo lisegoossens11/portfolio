@@ -79,7 +79,7 @@ h1 {
 
 nav {
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 li {
@@ -100,7 +100,7 @@ a:hover {
 }
 
 header {
-    padding-top: 6em;
+    padding-top: 4em;
     padding-right: 6em;
     padding-left: 6em;
     padding-bottom: 3em;
@@ -279,6 +279,13 @@ figcaption {
 
 .small-page-image video {
     max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.vertical-page-image video {
+    max-width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
