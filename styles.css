@@ -1,25 +1,182 @@
+/* -----------------------
+   Base / Reset
+------------------------ */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: "dreaming-outloud-sans", sans-serif;
+    color: #1B1B1B;
+    background-color: #ffffff;
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+
+/* -----------------------
+   Typography
+------------------------ */
 h1 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 2em;
+    font-family: "dreaming-outloud-sans", sans-serif;
+    font-size: 50px;
+    font-weight: normal;
     text-align: center;
-    color: #232323;
+    font-style: italic;
 }
 
 .bigger-text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 2em;
+    font-family: "dreaming-outloud-sans", sans-serif;
+    font-size: 30pt;
+    font-weight: normal;
     text-align: center;
-    color: #232323;
 }
 
+p, li, a, figcaption, caption {
+    color: #1B1B1B;
+}
+
+.caption {
+    max-width: 50vw;
+}
+
+/* -----------------------
+   Navigation
+------------------------ */
+nav {
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+li {
+    font-family: "dreaming-outloud-sans", sans-serif;
+    font-size: 22pt;
+    list-style-type: none;
+    display: inline;
+    padding: 0.7em;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* -----------------------
+   Header (UNCHANGED)
+------------------------ */
+header {
+    padding-top: 3em;
+    padding-right: 6em;
+    padding-left: 6em;
+    padding-bottom: 3em;
+}
+
+/* -----------------------
+   HOMEPAGE GRID (UNCHANGED)
+------------------------ */
+.homepage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em; 
+    max-width: 2000px;
+    padding: 0 3em; 
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; 
+}
+
+.column img,
+.column video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* -----------------------
+   PROJECT PAGE LAYOUT
+------------------------ */
+
+.vertical-page-image {
+    display: grid;
+    grid-template-columns: 600px 420px;
+    gap: 60px;
+
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.vertical-page-image img,
+.vertical-page-image video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+/* -----------------------
+   Other image layouts (kept)
+------------------------ */
+.page-image,
+.small-page-image,
+.wide-page-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.page-image img {
+    max-width: 800px;
+}
+
+.small-page-image img,
+.small-page-image video {
+    max-width: 400px;
+}
+
+.wide-page-image img {
+    max-width: 90vw;
+}
+
+
+
+/* -----------------------
+   Text blocks
+------------------------ */
+.text {
+    text-align: center;
+    margin: auto;
+}
+
+.text.end {
+    margin-top: 5em;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -----------------------
+   Misc (kept from original)
+------------------------ */
 .gallery-text { 
     text-align: left; 
     margin-left: auto; 
@@ -28,314 +185,27 @@ h1 {
     max-width: 600px; 
 }
 
-/* aanpassing */
-.homepage-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em; 
-  max-width: 2000px;
-  padding: 0 6em; 
-  margin: 0 auto;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em; 
-  
-
-}
-
-.column img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.column video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-/* aanpassing eind */
-
-
-
 .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  margin: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 14px;
+    margin: 40px 0 0 0;
 }
 
 .social-icons img {
-  width: 22px;
-  height: 22px;
-  display: block;
-  opacity: 0.85;
-}
-
-
-nav {
-    text-align: center;
-    margin-top: 1em;
-}
-
-li {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 18px;
-    list-style-type: none;
-    display: inline;
-    padding: 0.5em;
-}
-
-a {
-    text-decoration: none;
-    color: #767676;
-}
-
-a:hover {
-    color: #232323;
-}
-
-header {
-    padding-top: 4em;
-    padding-right: 6em;
-    padding-left: 6em;
-    padding-bottom: 3em;
-}
-
-body {
-    color: #767676;
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Source Serif Pro', serif;
-}
-
-
-.big-collage {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 1.5em; 
-    padding: 2em; 
-}
-
-.big-collage img {
-    max-width: 600px;
-}
-
-
-
-.outfits {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 1.5em; 
-    padding: 2em; 
-}
-
-.outfits img {
-    max-width: 400px;
-}
-
-.smaller-collage {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 1.5em; 
-    padding: 2em; 
-}
-
-.smaller-collage img {
-    max-width: 340px;
-}
-
-.wide-collage {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 1em; 
-    padding-bottom: 1em; 
-    padding-top: 1em; 
-    margin: auto;
-    max-width: 1080px;
-}
-
-.wide-collage img {
-    max-width: 200px;
-}
-
-
-figure img {
-    width: 100%;
-    height: auto;
+    width: 22px;
+    height: 22px;
     display: block;
-    margin: 0 auto;
+    opacity: 0.85;
 }
-
-figcaption {
-    text-align: left;
-    padding-left: 1em;
-    padding-top: 0.4em;
-    
-}
-
-.space-above {
-    padding-top: 1em;
-}
-
-.text {
-    text-align: center;
-    margin: auto;
-}
-
-.image {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-    justify-content: center;
-}
-
-.video {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-    justify-content: center;
-}
-
-.page-image {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    justify-content: center;
-    align-items: center; /* This ensures images are centered vertically */
-    margin: 0 auto; /* Centers the flex container horizontally */
-    
-}
-
-.page-image img {
-    max-width: 800px;
-    height: auto;
-    
-}
-
-.page-image figcaption {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1em;
-    max-width: 600px;
-    
-}
-
-
-
-.vertical-page-image {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    justify-content: center;
-    align-items: center; /* This ensures images are centered vertically */
-    margin: 0 auto; /* Centers the flex container horizontally */
-    
-}
-
-.vertical-page-image img {
-    max-width: 600px;
-    height: auto;
-    
-}
-
-.vertical-page-image figcaption {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1em;
-    max-width: 600px;
-}
-
-.small-page-image {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    justify-content: center;
-    align-items: center; /* This ensures images are centered vertically */
-    margin: 0 auto; /* Centers the flex container horizontally */
-    
-}
-
-.small-page-image img {
-    max-width: 400px;
-    height: auto;
-    
-}
-
-
-.small-page-image video {
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.vertical-page-image video {
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.small-page-image figcaption {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1em;
-    max-width: 600px;
-}
-
-.wide-page-image {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    justify-content: center;
-    align-items: center; /* This ensures images are centered vertically */
-    margin: 0 auto; /* Centers the flex container horizontally */
-    
-}
-
-.wide-page-image img {
-    width: 1080px;
-    height: auto;
-    max-width: 100%;
-    
-}
-
-.wide-page-image figcaption {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    max-width: 600px;
-}
-
 
 .bold {
-    font-weight: strong;
+    font-weight: bold;
 }
 
 .italic {
     font-style: italic;
-}
-
-.end {
-    margin-top: 5em;
 }
 
 footer {
@@ -345,451 +215,41 @@ footer {
     font-size: 16px;
 }
 
-.small {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.bio-text {
-    text-align: left;
-    margin: auto;
-    padding-bottom: 1em;
-    max-width: 800px;
-}
-
-.bio-photo-text {
-    display: flex;
-    align-items: center; 
-    gap: 2em; 
-    margin-bottom: 3em;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 800px;
-}
-
-
-
-#bio-pic {
-    width: 400px; 
-    height: auto;
-}
-
-#birth-announcement-text {
-    text-align: left;
-    margin: auto;
-    padding-bottom: 1em;
-    
-}
-
-.birth-announcement-text {
-    
-    margin-bottom: 3em;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 800px;
-}
-
-
-.text-title {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    font-size: 1.5em;
-    text-align: center;
-    color: #232323;
-    margin: auto;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    
-}
-
-.right-text {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-
-.biography {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 4000px;
-    padding: 0 2em;
-    
-}
-
-.black a{
-    color: #232323 !important;
-
-}
-
-.big-image {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-
-.underillustration {
-    margin-top: 1em;
-}
-
-/* Mobile Adjustments */
-@media screen and (max-width: 400px) {
-    body {
-        font-size: 16px;
-        margin: 0; 
-        padding: 0; 
-        box-sizing: border-box; 
-    }
-
-    .gallery-text { 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        max-width: 90vw; 
-        padding-top: 3em; 
-    }
-   
-
-
-    figure {
-        margin: 0 auto;
-        padding: 0; 
-        width: 100%; 
-    }
-
-    /* aanpassing */
-     .homepage-grid {
-     grid-template-columns: 1fr; 
-     padding: 0; 
-     margin: 0; 
-    }
-
-    .column {
-     gap: 0.5em; 
-    }
-    /* aanpassing eind */
-
-    figure img {
-        width: 100vw;
-    
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-
-    figure video {
-        width: 100vw;
-    
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-    .outfits {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-        width: 100vw;
-    }
-
-
-    .big-collage {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-    }
-
-    .big-collage img {
-        width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-
-
-    figcaption {
-    max-width: 90vw; 
-    font-size: 16px;
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-
-    .end {
-    max-width: 90vw; 
-    font-size: 16px;
-    padding-left: 1em;
-    padding-right: 1em;
-    }
-
-    .outfits img {
-        width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-    .wide-collage {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-        width: 100vw;
-    }
-
-     .wide-collage img {
-      width: 100vw;
-      height: auto;
-      display: block; /* Removes inline-block spacing */
-      object-fit: cover; /* Prevents stretching if needed */
-      max-width: none;
-    }
-
-    .smaller-collage img {
-      width: 100vw;
-      height: auto;
-      display: block; /* Removes inline-block spacing */
-      object-fit: cover; /* Prevents stretching if needed */
-      max-width: none;
-    }
-
-    .smaller-collage {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-        width: 100vw;
-    }
-
-
-
-   
-    .bio-photo-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
-        margin-bottom: 3em;
-        max-width: 100%; 
-    }
-
-    #bio-pic {
-        width: 100%;  
-        height: auto;
-    }
-
-    .right-text {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-   
-    .biography {
-        padding: 0 2em;
-    }
-
-    
-    .bio-text {
-        width: 100%;
-    }
-
-    
-    .big-image {
-        gap: 1em;
-    }
+/* -----------------------
+   Mobile
+------------------------ */
+@media screen and (max-width: 900px) {
 
     h1 {
-        text-align: center; 
-        margin: 0; 
+        font-size: 32pt;
     }
 
-    header {
-    padding-top: 3em;
-    padding-right: 0em;
-    padding-left: 0em;
-    padding-bottom: 3em;
-    }
-}
-
-/* Tablet Adjustments */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-        margin: 0; 
-        padding: 0; 
-        box-sizing: border-box; 
+    li {
+        font-size: 22pt;
     }
 
-    .gallery-text { 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        max-width: 90vw; 
-        padding-top: 3em; 
-    }
-    
-   
-    /* aanpassing */
     .homepage-grid {
-     grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
+        padding: 0;
     }
 
     .column {
-     gap: 0.5em; 
-    }
-    /* aanpassing eind */
-
-    figcaption {
-    max-width: 90vw; 
-    font-size: 16px;
-    padding-left: 2em;
-    padding-right: 2em;
-    }
-
-    .outfits {
-        display: grid;
         gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-        width: 100vw;
     }
 
-    .outfits img {
-        width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
+    .vertical-page-image {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 1.5em;
     }
 
-    .wide-collage {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-        width: 100vw;
-    }
-
-    .wide-collage img {
-      width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-        max-width: none;
-    }
-
-    .smaller-collage {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-        width: 100vw;
-    }
-
-    .smaller-collage img {
-      width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-        max-width: none;
-    }
-
-    .big-collage {
-        display: grid;
-        gap: 0.5em;
-        column-count: 1; 
-        padding: 0; 
-        margin: 0; 
-    }
-
-    .big-collage img {
-        width: 100vw;
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-  
-
-    figure {
-        margin: 0;
-        padding: 0; 
-        width: 100%; 
-    }
-
-    figure img {
-        width: 100vw;
-    
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-    figure video {
-        width: 100vw;
-    
-        height: auto;
-        display: block; /* Removes inline-block spacing */
-        object-fit: cover; /* Prevents stretching if needed */
-    }
-
-   
-    .bio-photo-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
-        margin-bottom: 3em;
-        max-width: 100%; 
-    }
-
-    #bio-pic {
-        width: 100%;  
-        height: auto;
-    }
-
-    .right-text {
+    .vertical-page-image figcaption {
         font-size: 16px;
-        line-height: 1.5;
-    }
-
-   
-    .biography {
-        padding: 0 2em;
-    }
-
-    
-    .bio-text {
-        width: 100%;
-    }
-
-    
-    .big-image {
-        gap: 1em;
-    }
-
-    h1 {
-        text-align: center; 
-        margin: 0; 
+        max-width: 100%;
     }
 
     header {
-    padding-top: 3em;
-    padding-right: 0em;
-    padding-left: 0em;
-    padding-bottom: 3em;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
-
