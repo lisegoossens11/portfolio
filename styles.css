@@ -252,4 +252,17 @@ footer {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .caption {
+        max-width: 100%;
+        padding: 0 0.5em;
+    }
+
+    .end {
+        max-width: 100%;
+        padding: 0 0.5em;
+    }
+
 }
+
+
